@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url(imgs/download.jpg);
+            background-size: cover;
+        }
+    </style>
+    <link rel="stylesheet" href="css/survey.css">
+    <meta charset="UTF-8">
+    <title>survey</title>
+</head>
+<body>
+    <img  class="img" src="imgs/Untitled.png" alt="couldnt download the image">
+    <br><br><br>
+    <div class="main">
+    <h1> <span class="qu">Q1)</span> About how long does your area have snowy weather in the year?</h1>
+    <br>
+    <div class="snow-d">
+    <div >
+        <form>
+        <input required class="snow" id="6" type="radio" name="snow" value="More than 6 months a year">
+        <label class="snow" for="6">More than 6 months a year</label>
+    </div>
+    <div>
+        <input required class="snow" id="4" type="radio" name="snow" value="4-5 months a year">
+        <label class="snow" for="4">4-5 months a year</label>
+    </div>
+    <div>
+        <input required class="snow" id="2" type="radio" name="snow" value="2-3 months a year">
+        <label class="snow" for="2">2-3 months a year</label>
+    </div>
+    <div>
+        <input required class="snow" id="1" type="radio" name="snow" value="About 1 month ayear">
+        <label class="snow" for="1">About 1 month ayear</label>
+    </div>
+    <div>
+        <input required class="snow" id="less" type="radio" name="snow" value="Less than above">
+        <label class="snow" for="less">Less than above</label>
+    </div>
+    <div>
+        <input required class="snow" id="none" type="radio" name="snow" value="It does not snow at all">
+        <label class="snow" for="none">It does not snow at all</label>
+    </div>
+    <br>
+    <label required class="cont-lab" for=""><span class="qu">Q2)</span>In wich county do you currently live?</label>
+    <br><br>
+    <input required placeholder="choose your county" class="cont-list" list="revune" name="county">
+        <datalist required id="revune">
+            <option value="Anderson County">
+            <option value="Andrews County">
+            <option value="Angelina County">
+            <option value="Aransas County">
+            <option value="Archer County">
+            <option value="Armstrong County">
+            <option value="Atascosa County">
+            <option value="Austin County">
+            <option value="Bailey County">
+            <option value="Bandera County">
+            <option value="Bastrop County">
+        </datalist>
+        <br><br>
+        <div>
+            <label class="cont-lab" for="num5"><span class="qu">Q3)</span>write your five digits zip code</label></label>
+            <br>
+            <input required maxlength="5" minlength="5" class="cont-list" id="num5" type="number">
+        </div>
+        <div>
+            <label class="cont-lab" for="dat"> <span class="qu">Q4)</span>Choose your birth date</label>
+            <br>
+            <input required class="cont-list" id="dat" type="date">
+        </div>
+        <div>
+            <label class="cont-lab2" for="agre"><b> Agreement</b></label>
+            <input required class="cont-list2" id="agre" type="checkbox">
+        </div>
+        <div>
+            <input class="but" type="submit" class="but">
+            <input  type="reset" class="but2">
+        </div>
+        <!-- <div>
+            <button >submit</button>
+        </div> -->
+    </form>
+</div>
+</div>
+</body>
+</html>
